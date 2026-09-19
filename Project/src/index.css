@@ -2,12 +2,12 @@
 
 @theme {
   /* sage light */
-  --color-sage-light-100: #ccd7c0;
-  --color-sage-light-200: #d6dfcd;
-  --color-sage-light-300: #e0e7d9;
-  --color-sage-light-400: #eaefe6;
-  --color-sage-light-500: #f4f7f2;
-  --color-sage-light-600: #ffffff;
+  --color-sage-light-100: #ffffff;
+  --color-sage-light-200: #f4f7f2;
+  --color-sage-light-300: #eaefe6;
+  --color-sage-light-400: #e0e7d9;
+  --color-sage-light-500: #d6dfcd;
+  --color-sage-light-600: #ccd7c0;
 
   /* sage */
   --color-sage-50: #c2cfb4;
