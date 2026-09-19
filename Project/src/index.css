@@ -1,14 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sage-50: #f4f7f4;
-  --color-sage-100: #e6ebe5;
-  --color-sage-200: #ced9cd;
-  --color-sage-300: #b2c2b0;
-  --color-sage-400: #91a68f;
-  --color-sage-500: #748c72;
-  --color-sage-600: #5d735b;
-  --color-sage-700: #4a5c49;
-  --color-sage-800: #3e4d3d;
-  --color-sage-950: #1f261e;
+  /* sage light */
+  --color-sage-light-100: #ccd7c0;
+  --color-sage-light-200: #d6dfcd;
+  --color-sage-light-300: #e0e7d9;
+  --color-sage-light-400: #eaefe6;
+  --color-sage-light-500: #f4f7f2;
+  --color-sage-light-600: #ffffff;
+
+  /* sage */
+  --color-sage-50: #c2cfb4;
+  --color-sage-100: #b8c7a7;
+  --color-sage-200: #aebf9b;
+  --color-sage-300: #a4b78e;
+  --color-sage-400: #9ab082;
+  --color-sage-500: #8a9e75;
+  --color-sage-600: #7b8c68;
+  --color-sage-700: #6b7b5b;
+  --color-sage-800: #5c694e;
+  --color-sage-950: #4d5841;
+
+  /* sage dark */
+  --color-sage-dark-100: #3d4634;
+  --color-sage-dark-300: #2e3427;
+  --color-sage-dark-500: #1e231a;
+  --color-sage-dark-700: #0f110d;
+  --color-sage-dark-900: #000000;
 }
