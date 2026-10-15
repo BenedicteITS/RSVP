@@ -1,3 +1,5 @@
+import CardKomponent from "./components/Card";
+
 function App() {
   return (
     <div className="min-h-screen bg-sage-light-100 px-4">
@@ -12,6 +14,7 @@ function App() {
           rerum nam aspernatur iste, eius earum quisquam necessitatibus aliquid
           amet quod ab quaerat.
         </p>
+        <CardKomponent />
       </div>
     </div>
   );
