@@ -52,6 +52,11 @@ function CardKomponent() {
           </label>
         </div>
       </div>
+       <div className="flex items-center justify-center text-center pt-4">
+        <button className="mt-4 px-6 py-2 rounded-lg bg-sage-400 text-white font-medium hover:bg-sage-500 transition-colors ">
+          Send svar
+        </button>
+      </div>
     </div>
   );
 }
