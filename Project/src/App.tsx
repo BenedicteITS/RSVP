@@ -1,4 +1,5 @@
-import Card from "./components/Card";
+import CardComponent from "./components/Card";
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           rerum nam aspernatur iste, eius earum quisquam necessitatibus aliquid
           amet quod ab quaerat.
         </p>
-        <Card />
+        <CardComponent />
       </div>
     </div>
   );
