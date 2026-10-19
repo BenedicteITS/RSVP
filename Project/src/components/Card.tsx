@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GuestAttendance from "./AttendanceCardContent";
+import GuestAttendance from "./GuestAttendance";
 import guestListFromApi from "../data/MockData";
 import type { Guest } from "../types/Guest";
 
