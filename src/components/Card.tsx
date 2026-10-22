@@ -6,8 +6,12 @@ import type { Guest } from "../types/Guest";
 function CardComponent() {
   const [guestList, setGuestList] = useState<Guest[]>(guestListFromApi);
 
+  const allAttendanceAnswered = guestList.every(
+    (guest) => guest.attending !== null
+  );
+
   function handleAttendingChange(guestId: number, attending: boolean) {
-    // Finne hvilken plass gjesten har i lista 
+    // Finne hvilken plass gjesten har i lista
     const guestIndex = guestList.findIndex((g) => g.id === guestId);
     // Lage kopi av hele lista (ny liste med de samme gjestene)
     const updatedList = [...guestList];
@@ -17,7 +21,6 @@ function CardComponent() {
     updatedList[guestIndex] = updatedGuest;
     // Gi nye lista til React
     setGuestList(updatedList);
-
   }
   function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -35,7 +38,11 @@ function CardComponent() {
         ))}
 
         <div className="flex items-center justify-center text-center pt-4">
-          <button type="submit" className="mt-4 px-6 py-2 rounded-lg bg-sage-400 text-white font-medium hover:bg-sage-500 transition-colors ">
+          <button
+            type="submit"
+            className="mt-4 px-6 py-2 rounded-lg bg-sage-500/90 text-white font-medium enabled:hover:bg-sage-400 enabled:active:scale-95 enabled:active:bg-sage-600 transition disabled:bg-gray-400/30 disabled:cursor-not-allowed"
+            disabled={!allAttendanceAnswered}
+          >
             Send svar
           </button>
         </div>
