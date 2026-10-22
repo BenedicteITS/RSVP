@@ -12,10 +12,7 @@ A web app where wedding guests can respond to their invitation. Each invitation 
 
 ## Getting started
 
-The app lives in the `Project` folder:
-
 ```bash
-cd Project
 npm install
 npm run dev
 ```
